@@ -4,11 +4,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Sidebar from "./components/sidebar/Sidebar";
 import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+import Loader from "./components/loader/Loader"; 
 import About from "./pages/About";
-import Footer from "./components/footer/footer";
 import Resume from "./pages/Resume";
 import Portofolio from "./pages/Portofolio";
-import Loader from "./components/loader/Loader"; // Import Loader
 
 function App() {
   const [darkmode, setDarkmode] = useState(true);
