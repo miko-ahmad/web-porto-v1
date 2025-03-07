@@ -12,8 +12,8 @@ import Portofolio from "./pages/Portofolio";
 
 function App() {
   const [darkmode, setDarkmode] = useState(true);
-  const [loading, setLoading] = useState(false);
-  const location = useLocation();
+  const [loading, setLoading] = useState(true); // ⬅️ Default jadi true saat pertama kali render
+  const location = useLocation(); // ⬅️ Ambil lokasi saat ini
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", darkmode);
@@ -26,10 +26,11 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // Tampilkan Loader saat aplikasi pertama kali dimuat dan saat berpindah halaman
+    // ⬇️ Aktifkan loader setiap kali halaman berubah
     setLoading(true);
-    setTimeout(() => setLoading(false), 1000); // Simulasi waktu loading
-  }, []);
+    const timeout = setTimeout(() => setLoading(false), 1000); // Simulasi loading
+    return () => clearTimeout(timeout); // Bersihkan timeout agar tidak menumpuk
+  }, [location.pathname]); // ⬅️ Loading aktif setiap kali lokasi berubah
 
   function toggleMode() {
     setDarkmode(!darkmode);
@@ -37,7 +38,7 @@ function App() {
 
   return (
     <>
-      <Loader isLoading={loading} />
+      {loading && <Loader isLoading={loading} />} {/* ⬅️ Loader hanya tampil saat loading aktif */}
       <div className="dark:bg-darkOne bg-lightBg min-h-screen py-10">
         <div className="xl:max-w-[1500px] xl:mx-auto xl:flex xl:justify-center xl:items-stretch xl:gap-6 px-6">
           <Sidebar />
