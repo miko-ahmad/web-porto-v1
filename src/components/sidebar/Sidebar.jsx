@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin, FaGitlab } from "react-icons/fa";
 export default function Sidebar() {
   const [showContact, setShowContact] = useState(false);
   return (
-    <div className="container mx-auto p-4 dark:bg-darkTwo bg-lightBg xl:sticky xl:top-[40px] xl:h-full xl:z-[1] rounded-2xl  drop-shadow-darkShadow  ">
+    <div className="container mx-auto p-4 dark:bg-darkTwo bg-gray-200 xl:sticky xl:top-[40px] xl:h-full xl:z-[1] rounded-2xl  drop-shadow-darkShadow mb-4 xl:mb-0 ">
       <section>
         <div className="relative flex xl:flex-col justify-start items-center p-6 ">
           <div className="relative w-32 h-29 flex items-center justify-center drop-shadow-[2px_2px_4px_rgba(0,0,0,0.3)]">
@@ -25,7 +25,7 @@ export default function Sidebar() {
             <h2 className="whitespace-nowrap text-center dark:text-lightOne font-semibold ">
               Micho Ahmad S
             </h2>
-            <p className="dark:bg-darkOne bg-gray-300 dark:text-lightOne p-2 rounded-lg  m-auto  drop-shadow-[2px_2px_4px_rgba(0,0,0,0.8)]">
+            <p className="dark:bg-darkOne  dark:text-lightOne p-2 rounded-t-xl  m-auto  ">
               Web Developer
             </p>
           </div>
@@ -35,10 +35,10 @@ export default function Sidebar() {
           <ContactInfo />
         </div>
         {/* Show Contacts Button for Mobile */}
-        <div className="mt-4 xl:hidden">
+        <div className=" xl:hidden absolute top-0 bottom-auto left-auto right-0 ">
           <button
             onClick={() => setShowContact(!showContact)}
-            className="bg-yellow-400 text-black px-4 py-2 rounded-full text-sm"
+            className="bg-darkFive text-white hover:bg-lightOne hover:text-darkOne px-4 py-2 rounded-bl-2xl rounded-tr-2xl text-sm"
           >
             {showContact ? "Hide Contacts" : "Show Contacts"}
           </button>

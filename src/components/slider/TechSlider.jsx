@@ -20,7 +20,6 @@ import nextDark from "../../assets/img/tech-logo/dark-light/nextdark.png";
 import nextLight from "../../assets/img/tech-logo/dark-light/nextlight.png";
 
 export default function TechSlider({darkMode}) {
-  console.log(darkMode);
   
     const tech = [
         css,

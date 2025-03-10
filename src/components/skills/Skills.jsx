@@ -12,14 +12,13 @@ const skills = [
 export default function Skills() {
   return (
     <div className="pb-5">
-      <div className="flex  items-center gap-3 p-2">
+      <div className="flex items-center gap-3 p-2">
         <div className=" relative flex items-center justify-center w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] rounded-[8px] sm:rounded-[12px] text-[16px] sm:text-[18px]  shadow-custom-dark bg-custom-gradient z-[1]">
           <FaCode className=" p-[4px] text-[28px] " />
         </div>
-
-        <h2 className="text-2xl font-bold text-white mb-4">My Skills</h2>
+        <h2 className="text-2xl font-bold">My Skills</h2>
       </div>
-      <div className=" mx-6 mt-2">
+      <div data-aos="fade-right" data-aos-duration="500" className=" mx-6 mt-2">
         <div className="  rounded-lg shadow-md bg-darkOne px-12 py-6 pt-8">
           {skills.map((skill, index) => (
             <div key={index} className="mb-4">

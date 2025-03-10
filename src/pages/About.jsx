@@ -1,7 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { textVariants, cardVariants } from "../animations/variants";
-import hero from "../assets/img/hero.png";
 import {
   FaPencilRuler,
   FaCode,
@@ -47,9 +44,8 @@ const About = ({ darkMode }) => {
         </h2>
       </header>
       <section
-         data-aos="fade-right"
-         data-aos-duration="500"
-         
+        data-aos="fade-right"
+        data-aos-duration="500"
         className="pb-5 text-justify"
       >
         <p>
@@ -75,7 +71,11 @@ const About = ({ darkMode }) => {
       <div className="separator bg-darkOne "></div>
       <section id="what-i-do" className="mb-8 text-white">
         <h2 className="text-2xl font-bold mb-6">What I'm Doing</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="500"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        >
           {services.map((service, index) => (
             <div
               key={index}

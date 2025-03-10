@@ -9,11 +9,13 @@ import Loader from "./components/loader/Loader";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
 import Portofolio from "./pages/Portofolio";
+import Navbartest from "./components/navbar/Navbartest";
+
 
 function App() {
   const [darkmode, setDarkmode] = useState(true);
   const [loading, setLoading] = useState(true); // Loader hanya untuk first load
-  const location = useLocation();
+  
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", darkmode);
@@ -39,11 +41,19 @@ function App() {
     <>
       {loading && <Loader isLoading={loading} />}
       {!loading && ( // ⬅️ Hanya render konten saat loading selesai
-        <div className="dark:bg-darkOne bg-lightBg min-h-screen py-10">
+        <div className="dark:bg-darkOne bg-light-bg min-h-screen py-10">
+          {/* <Navbartest /> */}
+          <div className="flex xl:hidden z-[50]">
+
+              <Navbar toggleMode={toggleMode} darkMode={darkmode} />
+          </div>
           <div className="xl:max-w-[1500px] xl:mx-auto xl:flex xl:justify-center xl:items-stretch xl:gap-6 px-6">
             <Sidebar />
-            <div className="xl:min-w-[75%] xl:w-[75%] xl:m-0 xl:relative xl:w-max xl:m-auto drop-shadow-darkShadow">
+            <div className="xl:min-w-[75%] xl:w-[75%] xl:m-0  xl:relativ xl:w-max xl:m-auto drop-shadow-darkShadow">
+              <div className="hidden xl:flex">
+
               <Navbar toggleMode={toggleMode} darkMode={darkmode} />
+              </div>
 
               <Routes>
                 <Route path="/" element={<Navigate to="/about" replace />} />
@@ -58,7 +68,7 @@ function App() {
                 />
               </Routes>
 
-              <Footer />
+              {/* <Footer /> */}
             </div>
           </div>
         </div>
