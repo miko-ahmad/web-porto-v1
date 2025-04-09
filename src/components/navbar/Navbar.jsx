@@ -55,7 +55,7 @@ export default function Navbar({ toggleMode, darkMode }) {
             <span className="hidden xl:inline">Portfolio</span>
           </NavLink>
         </li>
-        <li className="navbar-item">
+        {/* <li className="navbar-item">
           <NavLink
             to="/blog"
             className={({ isActive }) =>
@@ -80,7 +80,7 @@ export default function Navbar({ toggleMode, darkMode }) {
             <BiEnvelope size={24} className="xl:hidden" />
             <span className="hidden xl:inline">Contact</span>
           </NavLink>
-        </li>
+        </li> */}
         <ToggleModeComponents toggleMode={toggleMode} darkMode={darkMode} />
       </ul>
     </nav>
