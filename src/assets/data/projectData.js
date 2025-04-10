@@ -5,7 +5,7 @@ import IMG3 from "../img/porto/portfolio-img3.png";
 const projectsData = [
   {
     id: 1,
-    title: "Finance",
+    title: "Buntu Mondong Coffee",
     category: "Web development",
     image: IMG1,
   },
@@ -17,7 +17,7 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Fundo",
+    title: "UMI APPS",
     category: "Web design",
     image: IMG3,
   },
@@ -26,18 +26,6 @@ const projectsData = [
     title: "Brawlhalla",
     category: "Applications",
     image: IMG3,
-  },
-  {
-    id: 5,
-    title: "DSM.",
-    category: "Web design",
-    image: "/assets/images/project-5.png",
-  },
-  {
-    id: 6,
-    title: "MetaSpark",
-    category: "Web design",
-    image: "/assets/images/project-6.png",
   },
 ];
 
