@@ -13,7 +13,7 @@ const Portofolio = () => {
       : projectsData.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="container  mx-auto p-6 xl:p-10  shadow-lg text-white  shadow-lg ">
+    <div className="container  dark:bg-darkTwo bg-lightTwo  mx-auto p-[24px] xl:p-[40px] dark:text-white text-textLight shadow-lg rounded-2xl p-8">
       <header className="pb-5">
         <h2 className="relative text-[35px] font-bold pb-5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:bg-darkFive after:rounded-[3px] sm:after:w-[40px] sm:after:h-[5px]">
           Portfolio
@@ -46,7 +46,7 @@ const Portofolio = () => {
           {filteredProjects.map((project) => (
             <li
               key={project.id}
-              className="relative group p-1 bg-darkOne text-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 drop-shadow-darkShadow max-w-[420px]"
+              className="relative group p-1 dark:bg-darkOne bg-gray-200 dark:text-white text-darkOne rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 drop-shadow-darkShadow max-w-[420px]"
             >
               <a href="#" className="block">
                 <figure className="relative">

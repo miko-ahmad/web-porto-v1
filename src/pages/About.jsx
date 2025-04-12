@@ -38,7 +38,7 @@ const About = ({ darkMode }) => {
   ];
 
   return (
-    <div className="container  mx-auto p-[24px] xl:p-[40px] dark:text-white text-textLight shadow-lg ">
+    <div className="container  dark:bg-darkTwo bg-lightTwo  mx-auto p-[24px] xl:p-[40px] dark:text-white text-textLight shadow-lg rounded-2xl p-8">
       {/* <Navbar /> */}
       <header className="pb-5">
         <h2 className="relative text-[35px] dark:text-lightOne text-darkOne font-bold pb-5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:bg-darkFive after:rounded-[3px] sm:after:w-[40px] sm:after:h-[5px]">

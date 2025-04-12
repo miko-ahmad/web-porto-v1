@@ -43,20 +43,13 @@ function App() {
     <>
       {loading && <Loader isLoading={loading} />}
       {!loading && ( // ⬅️ Hanya render konten saat loading selesai
-        <div className="dark:bg-darkFour bg-lightOne min-h-screen py-10 ">
-          {/* <ProfilePage /> */}
-         
-          {/* <div className="flex xl:hidden z-[50]">
+        <div className="dark:bg-darkOne bg-lightOne min-h-screen py-10 ">
+          <div className="xl:max-w-[1440px] mx-auto">
 
-              <Navbar toggleMode={toggleMode} darkMode={darkmode} />
-          </div> */}
           <div className=" xl:mx-8 xl:flex xl:justify-center xl:items-stretch xl:gap-6 px-6 ">
             <Sidebar />
-            <div className="min-w-[70%]   relative  dark:bg-darkTwo bg-lightTwo ">
+            <div className="  relative  ">
               {/* <Navbartest /> */}
-              <div className="hidden xl:flex">
-
-              </div>
               <Navbar toggleMode={toggleMode} darkMode={darkmode} />
 
               <Routes>
@@ -75,6 +68,8 @@ function App() {
              
             </div>
           </div>
+          </div>
+        
         </div>
       )}
     </>

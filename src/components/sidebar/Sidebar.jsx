@@ -6,9 +6,9 @@ import profileImageBlack from "../../assets/img/mik.png";
 export default function Sidebar() {
   const [showContact, setShowContact] = useState(false);
   return (
-    <div className="container mx-auto p-4 dark:bg-darkTwo bg-lightTwo xl:sticky xl:top-[40px] xl:h-full xl:z-[1] rounded-2xl  shadow-lg mb-4 xl:mb-0 ">
+    <div className="container mx-auto p-4 dark:bg-darkTwo bg-lightTwo xl:sticky xl:top-[40px] xl:h-full xl:z-[1] rounded-2xl xl:max-w-[400px]  shadow-lg mb-4 xl:mb-0 ">
       <section className="relative">
-        <div className="relative flex xl:flex-col justify-start items-center p-6 ">
+        <div className=" flex xl:flex-col justify-start items-center p-10">
           <div className="relative  sm:w-32 sm:h-29 flex items-center justify-center drop-shadow-[2px_2px_4px_rgba(0,0,0,0.3)]">
             <div className="absolute w-28 h-8  sm:w-40 sm:h-10 dark:bg-darkOne bg-orange-300 rounded-2xl z-[-3]"></div>
             <div className="absolute w-14 h-20  sm:-top-1 sm:w-16 sm:h-28 dark:bg-darkFive bg-orange-500 rounded-full z-[-1] shadow-2xl"></div>

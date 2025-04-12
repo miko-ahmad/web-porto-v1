@@ -35,7 +35,7 @@ export default {
         darkOne: "#121212",
         darkTwo: "#1e1e1f",
         darkTri: "#282829",
-        darkFour: "#272828",
+        darkFour: "#2E2E2E",
         darkFive: "#fe5722",
         lightBg: "#f5f7fa",
         lightOne: "#f8f8f8",
