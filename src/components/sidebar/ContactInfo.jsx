@@ -1,27 +1,27 @@
 import { FaEnvelope, FaPhone, FaBirthdayCake, FaMapMarkerAlt,FaGithub, FaLinkedin, FaGitlab } from "react-icons/fa";
 
 const ContactInfo = () => (
-  <div className="flex flex-col p-4 rounded-xl text-sm text-gray-400 space-y-3 bg-red">
+  <div className="flex flex-col px-4 rounded-xl text-sm  space-y-3 bg-red">
     <div className="flex items-center space-x-2">
-      <FaEnvelope className="size-4 text-gray-500" />
-      <p> michoahmad99@gmail.com</p>
+      <FaEnvelope className="size-4 text-darkFive" />
+      <p className="dark:text-lightOne text-darkOne"> michoahmad99@gmail.com</p>
     </div>
     <div className="flex items-center space-x-2">
-      <FaPhone className="size-4 text-gray-500" />
-      <p> +6285756942080</p>
+      <FaPhone className="size-4 text-darkFive" />
+      <p className="dark:text-lightOne text-darkOne"> +6285756942080</p>
     </div>
     <div className="flex items-center space-x-2">
-      <FaBirthdayCake className="size-4 text-gray-500" />
-      <p> June 26, 1997</p>
+      <FaBirthdayCake className="size-4 text-darkFive" />
+      <p className="dark:text-lightOne text-darkOne"> June 26, 1997</p>
     </div>
     <div className="flex items-center space-x-2">
-      <FaMapMarkerAlt className="size-4 text-gray-500" />
-      <p> Pasar minggu, Jakarta Selatan, IDN</p>
+      <FaMapMarkerAlt className="size-4 text-darkFive" />
+      <p className="dark:text-lightOne text-darkOne"> Pasar minggu, Jakarta Selatan, IDN</p>
     </div>
-    <div className="py-6 flex flex gap-6">
-        <FaGithub />
-        <FaGitlab />
-        <FaLinkedin />
+    <div className="py-4 flex flex gap-6 items-center justify-center text-xl text-gray-500 ">
+        <FaGithub className="hover:text-darkFive"/>
+        <FaGitlab className="hover:text-darkFive"/>
+        <FaLinkedin className="hover:text-darkFive"/>
       </div>
   </div>
   

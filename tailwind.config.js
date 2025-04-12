@@ -8,13 +8,14 @@ export default {
         sans: ["Poppins", "sans-serif"], // Ganti font default ke Poppins
       },
       screens: {
-        'sm': '580px',  
-        'lg': '1024px',  
-        'xl': '1250px', 
+        xs: "360px",
+        sm: "580px",
+        lg: "1024px",
+        xl: "1250px",
         // 'xxxl': '1600px'
       },
       dropShadow: {
-        'darkShadow': '1px 1px 2px rgba(0,0,0,0.6)', 
+        darkShadow: "1px 1px 2px rgba(0,0,0,0.6)",
       },
       boxShadow: {
         "custom-dark": "-4px 8px 24px hsla(0, 0%, 0%, 0.25)",
@@ -22,9 +23,10 @@ export default {
       backgroundImage: {
         "light-gradient": "linear-gradient(to top, #dfe9f3 0%, white 100%);",
         "dark-gradient": "linear-gradient(to right, #434343 0%, black 100%)",
-        "custom-gradient":  "linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0.00%, 13.30%) 97%)",
-        "gradient-dark-hsl": "linear-gradient(to bottom right, hsl(0, 0%, 7%), hsl(0, 0%, 10%))",
-        
+        "custom-gradient":
+          "linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0.00%, 13.30%) 97%)",
+        "gradient-dark-hsl":
+          "linear-gradient(to bottom right, hsl(0, 0%, 7%), hsl(0, 0%, 10%))",
       },
       backgroundBlendMode: {
         multiply: "multiply",
@@ -36,16 +38,17 @@ export default {
         darkFour: "#272828",
         darkFive: "#fe5722",
         lightBg: "#f5f7fa",
-        lightOne: "#f9fafb",
-        lightTwo: "#ffffff",
+        lightOne: "#f8f8f8",
+        lightTwo: "#FFFFFF",
         lightTri: "#465981",
         lightFour: "#717171",
+        light: "#fbfbfe",
         secondary: "#fe5722",
         fontOne: "#696b6e",
         "gray-field": "#EBEBEB",
         navbar: "#04243A",
         "card-hover": "#081B2970",
-   
+
         darkText: "#ffffff", // Dark mode text
         lightText: "#000000", // Light mode text
       },
@@ -68,5 +71,4 @@ export default {
     textColor: ["dark", "light"],
   },
   plugins: [],
-}
-
+};

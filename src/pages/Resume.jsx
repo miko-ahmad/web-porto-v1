@@ -8,7 +8,7 @@ import Skills from "../components/skills/Skills";
 
 const Resume = () => {
   return (
-    <div className="container mx-auto p-6 xl:p-10 dark:bg-darkTwo bg-lightTwo shadow-lg text-white rounded-2xl">
+    <div className="container  mx-auto p-6 xl:p-10 shadow-lg dark:text-white text-darkOne shadow-lg ">
       {/* Header */}
       <header className="pb-5">
         <h2 className="relative text-[35px] font-bold pb-5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:bg-darkFive after:rounded-[3px] sm:after:w-[40px] sm:after:h-[5px]">
@@ -20,7 +20,7 @@ const Resume = () => {
       <div className="pb-5">
         {/* Title with Icon */}
         <div className="flex  items-center gap-3 mb-6 p-2">
-          <div className=" relative flex items-center justify-center w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] rounded-[8px] sm:rounded-[12px] text-[16px] sm:text-[18px]  shadow-custom-dark bg-custom-gradient z-[1]">
+          <div className=" relative flex items-center justify-center  w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] rounded-[8px] sm:rounded-[12px] text-[16px] sm:text-[18px]  shadow-custom-dark bg-custom-gradient z-[1]">
             <IoBookOutline className=" p-[4px] text-[28px] " />
           </div>
           <h2 className="text-2xl font-bold">Education</h2>

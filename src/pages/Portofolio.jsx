@@ -13,7 +13,7 @@ const Portofolio = () => {
       : projectsData.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="container mx-auto p-6 xl:p-10 dark:bg-darkTwo bg-lightTwo shadow-lg text-white rounded-2xl">
+    <div className="container  mx-auto p-6 xl:p-10  shadow-lg text-white  shadow-lg ">
       <header className="pb-5">
         <h2 className="relative text-[35px] font-bold pb-5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:bg-darkFive after:rounded-[3px] sm:after:w-[40px] sm:after:h-[5px]">
           Portfolio

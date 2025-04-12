@@ -19,12 +19,12 @@ export default function Skills() {
         <h2 className="text-2xl font-bold">My Skills</h2>
       </div>
       <div data-aos="fade-right" data-aos-duration="500" className=" mx-6 mt-2">
-        <div className="  rounded-lg shadow-md bg-darkOne px-12 py-6 pt-8">
+        <div className="  rounded-lg shadow-md dark:bg-darkOne bg-lightOne px-12 py-6 pt-8">
           {skills.map((skill, index) => (
             <div key={index} className="mb-4">
-              <div className="flex justify-between mb-1">
-                <span className="text-white font-semibold">{skill.name}</span>
-                <span className="text-white">{skill.level}</span>
+              <div className="flex justify-between mb-1 dark:text-white text-darkOne">
+                <span className=" font-semibold">{skill.name}</span>
+                <span className="">{skill.level}</span>
               </div>
               <div className="w-full bg-gray-900 rounded-full h-2.5">
                 <div

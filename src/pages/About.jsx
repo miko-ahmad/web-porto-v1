@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import Divider from "../components/slider/Divider";
 import TechSlider from "../components/slider/TechSlider";
+import Navbar from "../components/navbar/Navbar";
 
 const About = ({ darkMode }) => {
   const services = [
@@ -37,16 +38,17 @@ const About = ({ darkMode }) => {
   ];
 
   return (
-    <div className="container mx-auto p-[24px] xl:p-[40px]  dark:bg-darkTwo bg-lightBg  dark:text-white rounded-t-2xl">
+    <div className="container  mx-auto p-[24px] xl:p-[40px] dark:text-white text-textLight shadow-lg ">
+      {/* <Navbar /> */}
       <header className="pb-5">
-        <h2 className="relative text-[35px] font-bold pb-5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:bg-darkFive after:rounded-[3px] sm:after:w-[40px] sm:after:h-[5px]">
+        <h2 className="relative text-[35px] dark:text-lightOne text-darkOne font-bold pb-5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:bg-darkFive after:rounded-[3px] sm:after:w-[40px] sm:after:h-[5px]">
           About Me
         </h2>
       </header>
       <section
         data-aos="fade-right"
         data-aos-duration="500"
-        className="pb-5 text-justify"
+        className="pb-5 text-justify "
       >
         <p>
           Saya seorang Web Developer yang telah bersertifikasi oleh Binar
@@ -69,7 +71,7 @@ const About = ({ darkMode }) => {
         <TechSlider darkMode={darkMode} />
       </section>
       <div className="separator bg-darkOne "></div>
-      <section id="what-i-do" className="mb-8 text-white">
+      <section id="what-i-do" className="mb-8">
         <h2 className="text-2xl font-bold mb-6">What I'm Doing</h2>
         <div
           data-aos="fade-right"
@@ -79,12 +81,12 @@ const About = ({ darkMode }) => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-darkOne p-6 shadow-lg rounded-lg flex items-center gap-4"
+              className="dark:bg-darkOne bg-lightTri p-6 shadow-lg rounded-lg flex items-center gap-4"
             >
               {service.icon}
               <div>
                 <h3 className="font-bold text-lg">{service.title}</h3>
-                <p className="text-gray-300">{service.description}</p>
+                <p className="">{service.description}</p>
               </div>
             </div>
           ))}
