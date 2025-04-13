@@ -8,7 +8,7 @@ import Skills from "../components/skills/Skills";
 
 const Resume = () => {
   return (
-    <div className="container  dark:bg-darkTwo bg-lightTwo  mx-auto p-[24px] xl:p-[40px] dark:text-white text-textLight shadow-lg rounded-2xl p-8">
+    <div className="container  dark:bg-darkTwo bg-lightTwo  mx-auto p-[24px] xl:p-[40px] dark:text-white text-textLight shadow-lg rounded-2xl p-8 border border-darkFive">
       {/* Header */}
       <header className="pb-5">
         <h2 className="relative text-[35px] font-bold pb-5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:bg-darkFive after:rounded-[3px] sm:after:w-[40px] sm:after:h-[5px]">
@@ -17,7 +17,7 @@ const Resume = () => {
       </header>
 
       {/* Education Section */}
-      <div className="pb-5">
+      <div className="">
         {/* Title with Icon */}
         <div className="flex  items-center gap-3 mb-6 p-2">
           <div className=" relative flex items-center justify-center  w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] rounded-[8px] sm:rounded-[12px] text-[16px] sm:text-[18px]  shadow-custom-dark bg-custom-gradient z-[1]">
@@ -82,6 +82,8 @@ const Resume = () => {
           </ol>
         </div>
       </div>
+
+      <div className="separator bg-darkFive  "></div>
 
       <div className="pb-5">
         {/* Title with Icon */}
@@ -148,7 +150,10 @@ const Resume = () => {
           </ol>
         </div>
       </div>
-        <Skills />
+
+      <div className="separator bg-darkFive  "></div> 
+
+      <Skills />
     </div>
   );
 };

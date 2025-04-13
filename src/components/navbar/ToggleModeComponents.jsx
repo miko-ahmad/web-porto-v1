@@ -12,20 +12,20 @@ export default function ToggleModeComponents ({ toggleMode, darkMode })  {
 
       <div
         onClick={toggleMode}
-        className=" w-[56px] h-[25px] bg-lightTri dark:bg-darkFive border border-secondary rounded-full flex items-center justify-between relative cursor-pointer z-20"
+        className=" w-[56px] h-[25px] bg-lightOne dark:bg-darkTwo border dark:border-lightTwo border-darkOne rounded-full flex items-center justify-between relative cursor-pointer z-20"
       >
         <div
           className={
             darkMode
-              ? "w-[20px] h-[20px] bg-darkOne rounded-full  absolute ml-[3px] transition-all duration-300"
+              ? "w-[20px] h-[20px] bg-lightOne rounded-full  absolute ml-[3px] transition-all duration-300"
               : "w-[20px] h-[20px] bg-darkOne rounded-full  absolute ml-[3px] translate-x-[27px] transition-all duration-300"
           }
         ></div>
         <FaMoon
-          className="w-[20px] z-10 ml-1 text-lightOne"
+          className="w-[20px] z-10 ml-1 text-darkOne"
           
         />
-        <FaSun className="w-[20px] z-10 mr-1 text-darkFive"  />
+        <FaSun className="w-[20px] z-10 mr-1 text-lightOne"  />
 
       </div>
     </div>
