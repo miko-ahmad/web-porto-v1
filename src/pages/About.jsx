@@ -48,7 +48,7 @@ const About = ({ darkMode }) => {
       <section
         data-aos="fade-right"
         data-aos-duration="500"
-        className="pb-5 text-justify text-gray-400 "
+        className="pb-5 text-justify dark:text-gray-400 text-gray-500 "
       >
         <p>
           Saya seorang Web Developer yang telah bersertifikasi oleh Binar
@@ -81,12 +81,12 @@ const About = ({ darkMode }) => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="dark:bg-darkOne bg-lightOne p-6 shadow-lg rounded-lg flex items-center gap-4"
+              className="dark:bg-darkOne bg-gray-300 p-6 shadow-lg rounded-lg flex items-center gap-4 border border-darkFive"
             >
               {service.icon}
               <div>
                 <h3 className="font-bold text-lg">{service.title}</h3>
-                <p className="text-gray-400">{service.description}</p>
+                <p className="dark:text-gray-400 text-gray-600">{service.description}</p>
               </div>
             </div>
           ))}

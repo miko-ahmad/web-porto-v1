@@ -12,7 +12,7 @@ export default function ToggleModeComponents ({ toggleMode, darkMode })  {
 
       <div
         onClick={toggleMode}
-        className=" w-[56px] h-[25px] bg-lightOne dark:bg-darkTwo border dark:border-lightTwo border-darkOne rounded-full flex items-center justify-between relative cursor-pointer z-20"
+        className=" w-[56px] h-[25px] bg-lightOne dark:bg-darkTwo border border-darkFive  rounded-full flex items-center justify-between relative cursor-pointer z-20"
       >
         <div
           className={

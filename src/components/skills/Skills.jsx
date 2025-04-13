@@ -13,20 +13,20 @@ export default function Skills() {
   return (
     <div className="pb-5">
       <div className="flex items-center gap-3 p-2">
-        <div className=" relative flex items-center justify-center w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] rounded-[8px] sm:rounded-[12px] text-[16px] sm:text-[18px]  shadow-custom-dark bg-custom-gradient z-[1]">
+        <div className=" relative flex items-center justify-center w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] rounded-[8px] sm:rounded-[12px] text-[16px] sm:text-[18px]  shadow-custom-dark dark:bg-custom-gradient bg-gray-300 z-[1] border border-darkFive">
           <FaCode className=" p-[4px] text-[28px] " />
         </div>
         <h2 className="text-2xl font-bold">My Skills</h2>
       </div>
       <div data-aos="fade-right" data-aos-duration="500" className=" mx-6 mt-2">
-        <div className="  rounded-lg shadow-md dark:bg-darkOne bg-lightOne px-12 py-6 pt-8">
+        <div className="  rounded-lg shadow-md dark:bg-darkOne bg-gray-300 px-12 py-6 pt-8 border border-darkFive">
           {skills.map((skill, index) => (
             <div key={index} className="mb-4">
               <div className="flex justify-between mb-1 dark:text-white text-darkOne">
                 <span className=" font-semibold">{skill.name}</span>
                 <span className="">{skill.level}</span>
               </div>
-              <div className="w-full bg-gray-900 rounded-full h-2.5">
+              <div className="w-full dark:bg-darkTwo bg-lightOne rounded-full h-2.5">
                 <div
                   className="bg-darkFive h-2.5 rounded-full"
                   style={{ width: skill.level }}

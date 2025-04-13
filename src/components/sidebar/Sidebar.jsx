@@ -25,7 +25,7 @@ export default function Sidebar() {
             <h2 className="whitespace-nowrap text-center dark:text-lightOne font-semibold text-sm sm:text-2xl ">
               Micho Ahmad S
             </h2>
-            <p className=" text-xs sm:text-lg  text-center text-gray-400 pb-2 rounded-t-xl  m-auto  ">
+            <p className=" text-xs sm:text-lg  text-center dark:text-gray-400 text-gray-600 pb-2 rounded-t-xl  m-auto  ">
               Web Developer
             </p>
           </div>

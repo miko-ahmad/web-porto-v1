@@ -20,7 +20,7 @@ const Resume = () => {
       <div className="">
         {/* Title with Icon */}
         <div className="flex  items-center gap-3 mb-6 p-2">
-          <div className=" relative flex items-center justify-center  w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] rounded-[8px] sm:rounded-[12px] text-[16px] sm:text-[18px]  shadow-custom-dark bg-custom-gradient z-[1]">
+          <div className=" relative flex items-center justify-center  w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] rounded-[8px] sm:rounded-[12px] text-[16px] sm:text-[18px]  shadow-custom-dark dark:bg-custom-gradient bg-gray-300 z-[1]  border border-darkFive">
             <IoBookOutline className=" p-[4px] text-[28px] " />
           </div>
           <h2 className="text-2xl font-bold">Education</h2>
@@ -31,14 +31,14 @@ const Resume = () => {
           <ol
             data-aos="fade-right"
             data-aos-duration="500"
-            className="relative border-l border-secondary dark:border-gray-700"
+            className="relative border-l border-darkFive"
           >
             <li
               data-aos="fade-right"
               data-aos-duration="500"
               className="mb-10 ml-9"
             >
-              <span className="absolute flex items-center justify-center w-6 h-6 bg-headings rounded-full -left-12 ring-4 ring-white dark:ring-darkTri dark:bg-darkTwo p-1 drop-shadow-darkShadow">
+              <span className="absolute flex items-center justify-center w-6 h-6 bg-headings rounded-full -left-12 ring-4 ring-white dark:ring-darkTri dark:bg-darkTwo bg-gray-300 p-1 drop-shadow-darkShadow">
                 <img src={Binar} alt="Binar Academy logo" className=" w-6" />
               </span>
               <h3 className="mb-1 text-lg font-semibold text-headings dark:text-white">
@@ -61,7 +61,7 @@ const Resume = () => {
               data-aos-duration="500"
               className="mb-10 ml-9"
             >
-              <span className="absolute flex items-center justify-center w-6 h-6 bg-headings rounded-full -left-12 ring-4 ring-white dark:ring-darkTri dark:bg-darkTwo p-1 drop-shadow-darkShadow">
+              <span className="absolute flex items-center justify-center w-6 h-6 bg-headings rounded-full -left-12 ring-4 ring-white dark:ring-darkTri dark:bg-darkTwo bg-gray-300 p-1 drop-shadow-darkShadow">
                 <img
                   src={Umi}
                   alt="Universitas Muslim Indonesia logo"
@@ -88,7 +88,7 @@ const Resume = () => {
       <div className="pb-5">
         {/* Title with Icon */}
         <div className="flex  items-center gap-3 mb-6 p-2">
-          <div className=" relative flex items-center justify-center w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] rounded-[8px] sm:rounded-[12px] text-[16px] sm:text-[18px]  shadow-custom-dark bg-custom-gradient z-[1]">
+          <div className=" relative flex items-center justify-center w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] rounded-[8px] sm:rounded-[12px] text-[16px] sm:text-[18px]  shadow-custom-dark dark:bg-custom-gradient bg-gray-300 z-[1] border border-darkFive">
             <IoBookOutline className=" p-[4px] text-[28px] " />
           </div>
           <h2 className="text-2xl font-bold">Experience</h2>
@@ -99,14 +99,14 @@ const Resume = () => {
           <ol
             data-aos="fade-right"
             data-aos-duration="500"
-            className="relative border-l border-secondary dark:border-gray-700"
+            className="relative border-l border-darkFive"
           >
             <li
               data-aos="fade-right"
               data-aos-duration="500"
               className="mb-10 ml-9"
             >
-              <span className="absolute flex items-center justify-center w-6 h-6 bg-headings rounded-full -left-12 ring-4 ring-white dark:ring-darkTri dark:bg-darkTwo p-1 drop-shadow-darkShadow">
+              <span className="absolute flex items-center justify-center w-6 h-6 bg-headings rounded-full -left-12 ring-4 ring-white dark:ring-darkTri dark:bg-darkTwo bg-gray-300 p-1 drop-shadow-darkShadow">
                 <img src={Binar} alt="Binar Academy logo" className=" w-6" />
               </span>
               <h3 className="mb-1 text-lg font-semibold text-headings dark:text-white">
@@ -129,7 +129,7 @@ const Resume = () => {
               data-aos-duration="500"
               className="mb-10 ml-9"
             >
-              <span className="absolute flex items-center justify-center w-6 h-6 bg-headings rounded-full -left-12 ring-4 ring-white dark:ring-darkTri dark:bg-darkTwo p-1 drop-shadow-darkShadow">
+              <span className="absolute flex items-center justify-center w-6 h-6 bg-headings rounded-full -left-12 ring-4 ring-white dark:ring-darkTri dark:bg-darkTwo bg-gray-300 p-1 drop-shadow-darkShadow">
                 <img
                   src={Umi}
                   alt="Universitas Muslim Indonesia logo"
