@@ -5,9 +5,9 @@ import { FaGithub } from "react-icons/fa";
 
 
 
-import IMG1 from "../assets/img/porto/portfolio-img1.png";
+import IMG1 from "../assets/img/porto/kopi-btn.png";
 import IMG2 from "../assets/img/porto/portfolio-img2.png";
-import IMG3 from "../assets/img/porto/portfolio-img3.png";
+import IMG3 from "../assets/img/porto/umi-apps.png";
 
 const projectsData = [
   {

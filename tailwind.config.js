@@ -21,8 +21,9 @@ export default {
         "custom-dark": "-4px 8px 24px hsla(0, 0%, 0%, 0.25)",
       },
       backgroundImage: {
-        "light-gradient": "linear-gradient(to top, #dfe9f3 0%, white 100%);",
-        "dark-gradient": "linear-gradient(to right, #434343 0%, black 100%)",
+        "wavy-dark": "url('/public/svg/sprinkle.svg')",
+        "wavy-light": "url('/public/svg/sprinkle-light.svg')",
+        "dark-wavy": "linear-gradient(to right, #434343 0%, black 100%)",
         "custom-gradient":
           "linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0.00%, 13.30%) 97%)",
         "gradient-dark-hsl":
