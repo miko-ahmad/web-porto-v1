@@ -39,7 +39,7 @@ function App() {
     <>
       {loading && <Loader isLoading={loading} />}
       {!loading && ( // ⬅️ Hanya render konten saat loading selesai
-        <div className="dark:bg-wavy-dark bg-cove bg-wavy-light min-h-screen py-10  ">
+        <div className="dark:bg-wavy-dark bg-wavy-light min-h-screen py-10  ">
           <div className="xl:max-w-[1440px] mx-auto ">
             <div className=" xl:mx-8 xl:flex xl:justify-center xl:items-stretch xl:gap-6 px-6 ">
               <Sidebar />
