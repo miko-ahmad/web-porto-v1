@@ -21,8 +21,9 @@ export default {
         "custom-dark": "-4px 8px 24px hsla(0, 0%, 0%, 0.25)",
       },
       backgroundImage: {
-        "wavy-dark": "url('/svg/Sprinkle.svg')",
-        "wavy-light": "url('/svg/sprinkle-light.svg')",
+        "wavy-dark": "url('/svg/wavy-dark.svg')",
+        "wavy-light": "url('/svg/wavy.svg')",
+        "debug": "linear-gradient(to right, red, yellow)",
       },
       backgroundBlendMode: {
         multiply: "multiply",
