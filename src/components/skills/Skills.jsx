@@ -13,13 +13,13 @@ export default function Skills() {
   return (
     <div className="pb-5">
       <div className="flex items-center gap-3 p-2">
-        <div className=" relative flex items-center justify-center w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] rounded-[8px] sm:rounded-[12px] text-[16px] sm:text-[18px]  shadow-custom-dark dark:bg-custom-gradient bg-gray-300 z-[1] border border-darkFive">
-          <FaCode className=" p-[4px] text-[28px] " />
+        <div className=" relative dark:bg-darkOne bg-darkFive flex items-center justify-center w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] rounded-[8px] sm:rounded-[12px] text-[16px] sm:text-[18px]  shadow-custom-dark  z-[1] border border-darkFive">
+          <FaCode className=" p-[4px] text-[28px] text-light " />
         </div>
         <h2 className="text-2xl font-bold">My Skills</h2>
       </div>
       <div data-aos="fade-right" data-aos-duration="500" className=" mx-6 mt-2">
-        <div className="  rounded-lg shadow-md dark:bg-darkOne bg-gray-300 px-12 py-6 pt-8 border border-darkFive">
+        <div className="  rounded-lg shadow-md dark:bg-darkOne bg-light px-12 py-6 pt-8 border border-darkFive">
           {skills.map((skill, index) => (
             <div key={index} className="mb-4">
               <div className="flex justify-between mb-1 dark:text-white text-darkOne">

@@ -3,13 +3,14 @@ import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Sidebar from "./components/sidebar/Sidebar";
-import Navbartest from "./components/navbar/Navbartest";
+
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Loader from "./components/loader/Loader";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
 import Portofolio from "./pages/Portofolio";
+import Portofolio1 from "./pages/Portofolio";
 import ProfilePage from "./components/ProfilePage";
 
 function App() {
@@ -62,6 +63,10 @@ function App() {
                     path="/portfolio"
                     element={<Portofolio darkMode={darkmode} />}
                   />
+                  {/* <Route
+                    path="/portfolio1"
+                    element={<Portofolio1 darkMode={darkmode} />}
+                  /> */}
                 </Routes>
               </div>
             </div>

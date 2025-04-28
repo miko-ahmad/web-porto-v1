@@ -20,8 +20,8 @@ const Resume = () => {
       <div className="">
         {/* Title with Icon */}
         <div className="flex  items-center gap-3 mb-6 p-2">
-          <div className=" relative flex items-center justify-center  w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] rounded-[8px] sm:rounded-[12px] text-[16px] sm:text-[18px]  shadow-custom-dark dark:bg-custom-gradient bg-gray-300 z-[1]  border border-darkFive">
-            <IoBookOutline className=" p-[4px] text-[28px] " />
+          <div className="relative dark:bg-darkOne bg-darkFive flex items-center justify-center  w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] rounded-[8px] sm:rounded-[12px] text-[16px] sm:text-[18px]  shadow-custom-dark  z-[1]  border dark:border-darkFive ">
+            <IoBookOutline className=" p-[4px] text-[28px] text-light " />
           </div>
           <h2 className="text-2xl font-bold">Education</h2>
         </div>
@@ -49,11 +49,14 @@ const Resume = () => {
               </time>
               <ul className="ml-4 text-sm text-gray-500 dark:text-gray-400 list-disc">
                 <li>
-                  Thesis: Website for PT. Iconplus service complaints with
-                  urgency classification using K-Nearest Neighbors (KNN)
-                  algorithm
+                  Belajar dan menguasai pengembangan web full stack menggunakan
+                  JavaScript, mencakup teknologi frontend dan backend.
                 </li>
-                <li>Student with the 2nd highest GPA in the field of study</li>
+                <li>
+                  Final Project : Mengerjakan aplikasi full stack
+                  Rock-Paper-Scissors sebagai proyek utama, mulai dari pembuatan
+                  frontend hingga backend
+                </li>
               </ul>
             </li>
             <li
@@ -88,8 +91,8 @@ const Resume = () => {
       <div className="pb-5">
         {/* Title with Icon */}
         <div className="flex  items-center gap-3 mb-6 p-2">
-          <div className=" relative flex items-center justify-center w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] rounded-[8px] sm:rounded-[12px] text-[16px] sm:text-[18px]  shadow-custom-dark dark:bg-custom-gradient bg-gray-300 z-[1] border border-darkFive">
-            <IoBookOutline className=" p-[4px] text-[28px] " />
+          <div className="relative dark:bg-darkOne bg-darkFive flex items-center justify-center w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] rounded-[8px] sm:rounded-[12px] text-[16px] sm:text-[18px]  shadow-custom-dark  z-[1] border border-darkFive">
+            <IoBookOutline className=" p-[4px] text-[28px] text-light " />
           </div>
           <h2 className="text-2xl font-bold">Experience</h2>
         </div>
@@ -110,18 +113,23 @@ const Resume = () => {
                 <img src={Binar} alt="Binar Academy logo" className=" w-6" />
               </span>
               <h3 className="mb-1 text-lg font-semibold text-headings dark:text-white">
-                Binar Academy Bootcamp
+                Freelance Web Kopi Buntu Mondong
               </h3>
               <time className="block mb-2 text-xs font-normal text-gray-400 dark:text-gray-500">
-                Full Stack Web Developer | Jan – Aug, 2023
+                Web Developer | Jan – Jun, 2024
               </time>
               <ul className="ml-4 text-sm text-gray-500 dark:text-gray-400 list-disc">
                 <li>
-                  Thesis: Website for PT. Iconplus service complaints with
-                  urgency classification using K-Nearest Neighbors (KNN)
-                  algorithm
+                  Mendesain dan mengembangkan website untuk Kopi Buntu Mondong,
+                  fokus pada tampilan (UI/UX) dan responsivitas di berbagai
+                  perangkat.
                 </li>
-                <li>Student with the 2nd highest GPA in the field of study</li>
+                <li>
+                  Membuat landing page interaktif yang menampilkan berbagai
+                  produk kopi, informasi bisnis, dan fitur pemesanan sederhana,
+                  sambil memastikan pengalaman pengguna yang optimal pada
+                  berbagai platform dan perangkat.
+                </li>
               </ul>
             </li>
             <li
@@ -140,18 +148,26 @@ const Resume = () => {
                 Universitas Muslim Indonesia
               </h3>
               <time className="block mb-2 text-xs text-gray-400 dark:text-gray-500">
-                Teknik Informatika | Aug, 2015 – Jun, 2022
+                Magang Staft desai UI/UX | Aug, 2015 – Jun, 2022
               </time>
               <ul className="ml-4 text-sm text-gray-500 dark:text-gray-400 list-disc">
-                <li>Thesis: Desain UI/UX UMI Apps</li>
-                <li>Student with GPA 3.16</li>
+                <li>
+                  Berperan dalam tim desain untuk mengembangkan UI/UX aplikasi
+                  UMI Apps, mulai dari pembuatan wireframe, prototipe, hingga
+                  desain antarmuka yang user-friendly.
+                </li>
+                <li>
+                  Berkolaborasi dengan tim pengembang untuk mengimplementasikan
+                  desain yang sesuai dengan kebutuhan pengguna dan
+                  fungsionalitas aplikasi.
+                </li>
               </ul>
             </li>
           </ol>
         </div>
       </div>
 
-      <div className="separator bg-darkFive  "></div> 
+      <div className="separator bg-darkFive  "></div>
 
       <Skills />
     </div>

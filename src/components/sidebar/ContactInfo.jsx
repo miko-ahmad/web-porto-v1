@@ -1,4 +1,13 @@
-import { FaEnvelope, FaPhone, FaBirthdayCake, FaMapMarkerAlt,FaGithub, FaLinkedin, FaGitlab } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaBirthdayCake,
+  FaMapMarkerAlt,
+  FaGithub,
+  FaLinkedin,
+  FaGitlab,
+} from "react-icons/fa";
+import DownloadCVButton from "../button/DownloadCvButton";
 
 const ContactInfo = () => (
   <div className="flex flex-col px-8 rounded-xl text-sm  space-y-3 bg-red justify-center">
@@ -16,15 +25,38 @@ const ContactInfo = () => (
     </div>
     <div className="flex items-center space-x-2">
       <FaMapMarkerAlt className="size-4 text-darkFive" />
-      <p className="dark:text-gray-400 text-darkOne"> Pasar minggu, Jakarta Selatan, IDN</p>
+      <p className="dark:text-gray-400 text-darkOne">
+        {" "}
+        Pasar minggu, Jakarta Selatan, IDN
+      </p>
     </div>
     <div className="py-4 flex flex gap-6 items-center justify-center text-xl text-gray-500 ">
-        <FaGithub className="hover:text-darkFive"/>
-        <FaGitlab className="hover:text-darkFive"/>
-        <FaLinkedin className="hover:text-darkFive"/>
-      </div>
+      <a
+        href="https://github.com/miko-ahmad/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaGithub className="hover:text-darkFive" />
+      </a>
+      <a
+        href="https://gitlab.com/raitomiko40/ "
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaGitlab className="hover:text-darkFive" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/micho-ahmad-s/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaLinkedin className="hover:text-darkFive" />
+      </a>
+    </div>
+    <div className="py-4 flex flex gap-6 items-center justify-center text-xl text-gray-500 ">
+      <DownloadCVButton />
+    </div>
   </div>
-  
 );
 
 export default ContactInfo;

@@ -1,9 +1,6 @@
 import { useState } from "react";
-// import projectsData from "../assets/data/projectData";
 import { AiOutlineEye } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
-
-
 
 import IMG1 from "../assets/img/porto/kopi-btn.png";
 import IMG2 from "../assets/img/porto/portfolio-img2.png";
@@ -28,11 +25,9 @@ const projectsData = [
   },
 ];
 
-
-
 const categories = ["All", "Web design", "Applications", "Web development"];
 
-const Portofolio = () => {
+const Portofolio1 = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredProjects =
@@ -65,7 +60,12 @@ const Portofolio = () => {
 
       {/* Projects Section */}
       <div className="pb-5">
-        
+        <div className="flex items-center gap-3 mb-6 p-2">
+          <div className="relative flex items-center justify-center w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] rounded-[8px] sm:rounded-[12px] text-[16px] sm:text-[18px] shadow-custom-dark dark:bg-custom-gradient bg-gray-300 z-[1] border border-darkFive">
+            <FaGithub className="p-[4px] text-[28px]" />
+          </div>
+          <h2 className="text-2xl font-bold">Projects</h2>
+        </div>
 
         {/* Project Cards */}
         <ul data-aos="fade-right" data-aos-duration="500" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 justify-center">
@@ -133,4 +133,4 @@ const ProjectCard = ({ project }) => {
   );
 };
 
-export default Portofolio;
+export default Portofolio1;
